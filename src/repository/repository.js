@@ -11,8 +11,10 @@ export async function inserirAnime(anime){
 }
 
 export async function verAnime(){
-    const comando = `select * from tb_anime`
-
+  const comando = `
+          select 
+            nm_anime      nome  
+          from tb_anime`
     const [resposta] = await con.query(comando)
     return resposta;
 }

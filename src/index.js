@@ -8,4 +8,4 @@ server.use(express.json());
 server.use(cors());
 server.use(controller)
 
-server.listen(process.env.PORT, () => console.log(`API online on port ${process.env.PORT}`));
+server.listen(process.env.PORT, () => console.log(`API online: ${process.env.PORT}`));
